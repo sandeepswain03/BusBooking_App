@@ -9,14 +9,14 @@ interface TicketModalProps {
   bookingInfo: any;
 }
 
-const TicketModal: FC<TicketModalProps> = ({ visible, bookingInfo }) => {
+const TicketModal: FC<TicketModalProps> = ({ visible, onClose, bookingInfo }) => {
   return (
     <Modal visible={visible} animationType="slide" transparent>
       <View
         className="flex-1 justify-center items-center"
         style={{ backgroundColor: '#2A2526' }}
       >
-        <TouchableOpacity className="bg-white mb-5 shadow-sm p-1 rounded-full">
+        <TouchableOpacity onPress={onClose} className="bg-white mb-5 shadow-sm p-1 rounded-full">
           <XMarkIcon color="black" size={22} />
         </TouchableOpacity>
 
