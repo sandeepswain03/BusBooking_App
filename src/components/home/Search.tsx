@@ -146,7 +146,7 @@ const Search = () => {
           </TouchableOpacity>
 
           <Image
-            source={require('../../assets/images/sidebus.jpg')}
+            source={require('../../assets/images/sidebusbanner.jpg')}
             className="w-full h-40 my-4 rounded-lg"
           />
         </View>
